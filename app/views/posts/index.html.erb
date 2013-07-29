@@ -6,6 +6,7 @@
     <td>Body</td>
     <td>Location</td>
     <td>Email</td>
+    <td>Controls</td>
   </tr>
   <% @posts.each do |post| %>
     <tr>
@@ -14,6 +15,7 @@
       <td><%= post.body %></td>
       <td><%= post.location %></td>
       <td><%= post.email %></td>
+      <td><%= link_to 'Show', post %></td>
     </tr>
   <% end %>
 </table>
